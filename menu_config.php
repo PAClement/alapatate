@@ -121,7 +121,7 @@ var wrapper = document.querySelector( '#wrapper' );
 		}
 
 		function fetchcategorie(categorie){
-			fetch(`https://alapatate.fr/php/requet.php?categorie=${categorie}`)
+			fetch(`https:php/requet.php?categorie=${categorie}`)
 			.then(data => data.text())
 			.then(html => {
 				wrapper.innerHTML = html;

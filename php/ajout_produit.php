@@ -29,6 +29,6 @@
                         
     //locate page du menu
     
-    header('Location:https://alapatate.fr/menu_config');
+    header('Location:../menu_config');
 
 ?>

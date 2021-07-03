@@ -25,13 +25,13 @@
                     if(password_verify($password, $res['password'])){
                         
                             $_SESSION['isAdmin1'] = true ;
-                            header('Location:https://alapatate.fr/menu_config');
+                            header('Location:../menu_config');
                             exit();
                         }
                    else {
                             //SI LES IDENTIFIANTS SONT INCORRECTS
                             $_SESSION['erreur'] = "Identifiant ou Mot de passe incorrects";
-                            header('Location:https://alapatate.fr/admin_connexion');
+                            header('Location:../admin_connexion');
                             exit();
                    }
 		       }
@@ -39,7 +39,7 @@
 		       {
 			       	//SI LES IDENTIFIANTS SONT INCORRECTS
 					$_SESSION['erreur'] = "Identifiant ou Mot de passe incorrects";
-					header('Location:https://alapatate.fr/admin_connexion');
+					header('Location:../admin_connexion');
 					exit();
 		       }
 
