@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital@1&display=swap');
+
+body{
+    background: url("../images/background.jpg") no-repeat fixed;
+    background-size:cover;
+}
+
+/*======================
+TITRE
+=======================*/
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.logo--patate{
+    position: relative;
+    height: 300px;
+    width: 300px;
+}
+
+.suggest-article{
+    display: flex;
+    justify-content: center;
+}
+
+.suggest{
+    width: 500px;
+    height: auto;
+    margin: 0 0 2% 0;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+}
+
+.suggest-title{
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+    font-family:'Shadows Into Light', cursive;
+}
+
+/*=============================================
+       	CATEGORIE
+==============================================*/
+
+.box{
+	display: flex;
+	justify-content: center;
+}
+
+a{
+    text-decoration: none !important;
+    height: 300px;
+    width: 300px;
+    margin: 0.4%;
+}
+
+.image {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+    
+.image img {
+    display: none;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+  
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 0em;
+    font-family:'Shadows Into Light', cursive;
+    transition: 0.4s all;
+    text-shadow: 2px 2px #000, -2px 2px #000, 2px -2px #000, -2px -2px #000;
+    color: #fff;
+}
+
+.container:hover .centered{
+    font-size: 3.5em;
+    transition: 0.4s all;
+}
+
+.retour-menu{
+   display: none;
+}
+
+.link_back{
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+    border: 2px solid #a1160f;
+    margin: 0 35% 0 35%;
+    transition: 0.4s all;
+
+    display:block;
+}
+
+.link_back:hover{
+    margin: 0 40% 0 40%;
+    transition: 0.4s all;
+}
+
+/*===============================================
+CATEGORIE AFFICHAGE CONTAINER
+================================================*/
+
+.section-produit{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 10% 0 10%;
+}
+
+.name{
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 1%;
+    font-weight: bold;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.ingredient{
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    margin-bottom: 1%;
+    font-family: monospace;
+}
+
+.price{
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    font-family: 'Anonymous Pro', cursive;
+    margin-bottom: 2%;
+}
+
+.sepa{
+        height: 1px;
+        background-color: white;
+        margin:1% 35% 0 35%;
+}
+
+
+/*================================================
+FOOTER
+=================================================*/
+
+.attention{
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 2em;
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+}
+
+.adresse{
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    font-family: monospace;
+}
+
+.copyright{
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    font-family: monospace;
+}
+
+/*================================================
+ANIMATIONS
+=================================================*/
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+  }
+  .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    transform: scale(1.1);
+  }
+
+/*==================================
+Version Mobile
+===================================*/
+
+@media only screen and (max-width: 1000px) {
+    
+    body{
+        height: 500px;
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover;
+        margin: 0;
+    }
+
+    a{
+        text-decoration: none !important;
+        height: 300px;
+        width: 170px;
+        margin: 1%;
+    }
+
+    .box{  
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .centered{
+        font-size: 2.5em;
+    }
+    
+    .attention{
+        font-size: 1.5em;
+    }
+
+    .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+        transform: scale(1);
+    }
+
+    .suggest{
+        border:0px;
+    }
+
+    .section-produit{
+        margin: 0;
+    }
+
+    .image {
+        background-position: center;
+        background-size: cover;
+        width: 170px;
+        height: 300px;
+        border:2px solid white;
+        border-radius: 10px;
+    }
+
+    /*===========Sitcky BACK==============*/
+
+    .retour-menu{
+        display: block;
+        margin-right:0 !important;
+
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+
+        border-radius: 40px 40px 0px 0px;
+    
+        height: auto;
+        padding-bottom: 5px;
+        width: 100%;
+        background-color: rgba(147,21,15,0.8);
+
+        text-align: center;
+        font-size: 2.2em;
+        color: white;
+        font-family: 'Shadows Into Light', cursive;
+    }
+
+    .link_back{
+        display: none;
+    }
+
+
+}
+
+
+
+
+
+
+

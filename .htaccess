@@ -1,0 +1,4 @@
+RewriteEngine off
+ 
+RewriteCond %{REQUEST_URI} !^/maintenance
+RewriteRule .* /maintenance/ [R=302,L]

@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body{
+    background:  url('../images/background.jpg') no-repeat fixed;
+    background-size:cover;
+}
+
+.admin--title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Shadows Into Light', cursive;
+    color: white;
+    letter-spacing: 5px;
+}
+
+
+/*=====================
+        FORM
+======================*/
+
+.inputcss{
+    border-radius:10px; 
+    border-style:solid; 
+    box-shadow: 1px 0px 8px 0px rgba(42,42,42,.84); 
+    text-shadow:0px 0px 0px rgba(30,30,30,.75); 
+    font-weight:normal; 
+    font-family: 'montserrat', cursive; 
+    padding:11px; 
+    border-width:3px; 
+    font-size:20px;    
+    outline: none;
+    margin: 0 0 0 5%;
+}
+
+input{
+    border-color:#c9c5c9; 
+    transition-property: border-color;
+    transition-duration: 0.6s;
+}
+
+input:hover{
+    border-color:#B31414;  
+    transition-property: border-color;
+    transition-duration: 0.6s;   
+}
+
+.formulaire--connexion{
+    display: flex;
+    justify-content: center;
+    margin: 3% 0 0 0;
+}
+
+/*=============================*/
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.logo--patate{
+    position: relative;
+    height: 300px;
+    width: 300px;
+}
+
+/*====================================
+                BTN
+=====================================*/
+
+.btn {
+	border: none;
+	/*font-family: 'Anonymous Pro', monospace;*/
+    font-family: 'montserrat', cursive; 
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 25px 80px;
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	transition: all 0.3s;
+    width: 100%;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	transition: all 0.3s;
+}
+
+.btn-2 {
+	background: #393939;
+	color: #fff;
+	box-shadow: 0 6px #B31414;
+	transition: none;
+}
+
+.btn-2a {
+	border-radius: 0 0 5px 5px;
+}
+
+.btn-2a:hover {
+	box-shadow: 0 4px #B31414;
+	top: 2px;
+}
+
+.btn-2a:active {
+	box-shadow: 0 0 #B31414;
+	top: 6px;
+}
+
+/*================================================
+FOOTER
+=================================================*/
+
+.footer{
+    margin: 5% 0 0 0;
+}
+
+.adresse{
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    font-family: monospace;
+}
+
+.copyright{
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    font-family: monospace;
+}
+
+
+/*========================================================*/
+
+.message-erreur{
+    color: red;
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+/*==================================
+Version Mobile Partie administration
+===================================*/
+
+@media only screen and (max-width: 1000px) {    
+    
+    .logo--patate{
+        position: relative;
+        height: 700px;
+        width: 700px;
+    }   
+    
+    .logo{
+        margin: 0 0 10% 0;
+    }
+    
+    .admin--title{
+    
+        font-size: 45px;
+        margin: 0 0 10% 0;
+    }
+    
+    .inputcss{
+        font-size:35px;    
+
+        margin:0 0 0 0%;
+
+    }
+    
+    .footer{
+        margin: 10% 0 0 0;
+    }
+
+
+    .copyright{
+        font-size: 35px;
+    }
+    
+    .btn {
+        margin: 5% 0 0 0;
+        font-size: 35px;
+    }
+    
+    .message-erreur{
+
+        font-size: 35px;
+
+    }
+
+    
+}
